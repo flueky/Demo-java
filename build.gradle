@@ -1,3 +1,28 @@
+// 全部工程配置，作用于每个 Module
 allprojects {
+    repositories {
+        // 本地仓库
+        mavenLocal()
+        // 本地服务器
+        maven {
+            credentials {
+                username "flueky"
+                password "123456"
+            }
+            url 'http://127.0.0.1:9000/repository/android/'
+        }
+        // 工程目录仓库
+        maven { url 'file://' + rootDir.getAbsolutePath() + '/repository/' }
 
+//        //  仓库地址
+//        google()
+//        jcenter()
+//        mavenCentral()
+//
+//        // 依赖仓库，添加用于查找依赖项的目录，可以多个。
+//        flatDir {
+//            // jar、aar 存放的目录
+//            dirs 'libs'
+//        }
+    }
 }

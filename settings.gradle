@@ -1,3 +1,8 @@
 rootProject.name = 'Demo'
 
 include 'main'
+include 'library'
+
+// 添加外部工程依赖示例
+//include 'libModule'
+//project(':libModule').projectDir = new File(settingsDir, "../library")
