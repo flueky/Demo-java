@@ -8,7 +8,7 @@ plugins {
 group = 'com.flueky'
 // 定义 version
 version = '1.0.0' // 指定版本
- artifactId 默认使用 module name
+// artifactId 默认使用 module name
 
 // 以上两个配置也可以在下面的 deployer 中定义
 
