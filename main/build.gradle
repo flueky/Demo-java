@@ -1,5 +1,10 @@
 apply plugin: 'java'
+apply plugin: 'application'
 
+group 'com.flueky'
+version '0.0.1'
+
+mainClassName='com.flueky.demo.Test'
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
